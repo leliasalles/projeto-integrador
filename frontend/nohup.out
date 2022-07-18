@@ -1,0 +1,88 @@
+
+> frontend-pi@0.1.0 start
+> react-scripts start
+
+(node:31471) [DEP0111] DeprecationWarning: Access to process.binding('http_parser') is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Starting the development server...
+
+
+<--- Last few GCs --->
+
+[31471:0x622b5e0]    87658 ms: Scavenge 476.7 (495.1) -> 475.9 (496.6) MB, 5.4 / 0.0 ms  (average mu = 0.181, current mu = 0.037) allocation failure 
+[31471:0x622b5e0]    88593 ms: Mark-sweep 478.6 (497.3) -> 473.3 (496.2) MB, 931.2 / 0.1 ms  (average mu = 0.124, current mu = 0.049) allocation failure scavenge might not succeed
+[31471:0x622b5e0]    89832 ms: Mark-sweep 478.3 (497.3) -> 474.8 (497.2) MB, 1201.3 / 0.1 ms  (average mu = 0.075, current mu = 0.031) allocation failure scavenge might not succeed
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+ 1: 0xb09c10 node::Abort() [node]
+ 2: 0xa1c193 node::FatalError(char const*, char const*) [node]
+ 3: 0xcf8dde v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]
+ 4: 0xcf9157 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]
+ 5: 0xeb09f5  [node]
+ 6: 0xeb14d6  [node]
+ 7: 0xebf9fe  [node]
+ 8: 0xec0440 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]
+ 9: 0xec33be v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [node]
+10: 0xe848fa v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [node]
+11: 0x11fd646 v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [node]
+12: 0x15f20b9  [node]
+
+> frontend-pi@0.1.0 start
+> react-scripts start
+
+(node:32592) [DEP0111] DeprecationWarning: Access to process.binding('http_parser') is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Starting the development server...
+
+
+<--- Last few GCs --->
+
+[32592:0x676a5e0]    38604 ms: Scavenge (reduce) 466.0 (478.3) -> 465.5 (478.3) MB, 23.3 / 0.0 ms  (average mu = 0.692, current mu = 0.551) allocation failure 
+[32592:0x676a5e0]    38848 ms: Mark-sweep (reduce) 509.5 (521.9) -> 499.2 (516.9) MB, 34.0 / 0.1 ms  (+ 535.9 ms in 114 steps since start of marking, biggest step 17.5 ms, walltime since start of marking 1028 ms) (average mu = 0.637, current mu = 0.559) f
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+ 1: 0xb09c10 node::Abort() [node]
+ 2: 0xa1c193 node::FatalError(char const*, char const*) [node]
+ 3: 0xcf8dde v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]
+ 4: 0xcf9157 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]
+ 5: 0xeb09f5  [node]
+ 6: 0xec06bd v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]
+ 7: 0xec3335 v8::internal::Heap::HandleGCRequest() [node]
+ 8: 0xe509d7 v8::internal::StackGuard::HandleInterrupts() [node]
+ 9: 0x11fcd95 v8::internal::Runtime_StackGuard(int, unsigned long*, v8::internal::Isolate*) [node]
+10: 0x15f20b9  [node]
+npm ERR! code EUSAGE
+npm ERR! 
+npm ERR! Mark your favorite packages
+npm ERR! 
+npm ERR! Usage:
+npm ERR! npm star [<pkg>...]
+npm ERR! 
+npm ERR! Options:
+npm ERR! [--registry <registry>] [--no-unicode] [--otp <otp>]
+npm ERR! 
+npm ERR! Run "npm help star" for more info
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/ubuntu/.npm/_logs/2022-06-26T16_54_23_276Z-debug-0.log
+npm ERR! code EJSONPARSE
+npm ERR! path /home/ubuntu/projeto-integrador-v1.0_equipe6/frontend/package.json
+npm ERR! Merge conflict detected in your package.json.
+npm ERR! 
+npm ERR! Please resolve the package.json conflict and retry.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/ubuntu/.npm/_logs/2022-06-26T16_55_05_023Z-debug-0.log
+npm ERR! code EJSONPARSE
+npm ERR! path /home/ubuntu/projeto-integrador-v1.0_equipe6/frontend/package.json
+npm ERR! Merge conflict detected in your package.json.
+npm ERR! 
+npm ERR! Please resolve the package.json conflict and retry.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/ubuntu/.npm/_logs/2022-06-26T17_10_54_329Z-debug-0.log
